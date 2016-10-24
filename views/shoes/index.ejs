@@ -1,0 +1,41 @@
+
+<h2>Enter shoe details</h2>
+<form class="new-shoe">
+  <div class="row">
+    <div class="six columns">
+      <input type="text" name="shoe[color]" id="shoe-color" placeholder="Color of shoes" class="u-full-width">
+    </div>
+    <div class="six columns">
+      <input type="text" name="shoe[type]" id="shoe-type" placeholder="Type of Shoes" class="u-full-width">
+    </div>
+  </div>
+    <div class="row">
+    <div class="six columns">
+    <input type="text" name="shoe[size]" id="shoe-size" placeholder="Size of shoes" class="u-full-width">
+  </div>
+  <div class="six columns">
+  <input type="text" name="shoe[price]" id="shoe-price" placeholder="Selling price of shoes" class="u-full-width">
+</div>
+</div>
+<div class="row">
+<div class="six columns">
+<input type="text" name="shoe[cost]" id="shoe-cost" placeholder="Cost of shoes" class="u-full-width">
+</div>
+<div class="six columns">
+<input type="text" name="shoe[supplier]" id="shoe-supplier" placeholder="Supplier of shoes" class="u-full-width">
+</div>
+</div>
+<div class="row">
+    <input type="submit" value='Save My Shoes'>
+  </div>
+</div>
+</form>
+
+
+<% allShoes.forEach(function(shoe) { %>
+  <li><%= shoe.color %></li>
+  <li><%= shoe.type %></li>
+  <li><%= shoe.size %></li>
+<% }) %>
+
+<% include ../partials/footer.ejs  %>
