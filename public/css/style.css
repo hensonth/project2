@@ -4,9 +4,21 @@ body {
   color: white;
 }
 
+.body-wrapper {
+  min-height: 400px;
+}
+
+/*Form for Adding New Shoes*/
+
 input[type="submit"], input[type="submit"]:hover {
   color: white;
 }
+
+.new-shoe-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+/*End of form for adding new shoes*/
 
 /*Footer Bootstrap CSS*/
 
@@ -47,6 +59,7 @@ footer {
     margin-bottom: 0;
     text-align: center;
 }
+
 footer .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -57,7 +70,9 @@ footer .navbar .navbar-nav {
 
 .monospaced { font-family: 'Ubuntu Mono', monospaced ; }
 
-<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'
+rel='stylesheet'
+type='text/css'>
 
 
 /*End of Footer BootstrapCSS*/
