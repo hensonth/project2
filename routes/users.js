@@ -35,6 +35,7 @@ router.route('/signup')
           })
         })
       })
+
       .post(passport.authenticate('local-signup', {
         successRedirect: '/profile',
         failureRedirect: '/signup',
@@ -56,7 +57,7 @@ router.get('/error', function (req, res) {
 })
 
 router.get('/profile', function (req, res) {
-  res.send(req.user)
+  // res.send(req.user)
 
   res.render('users/profile', { message: req.flash('loginMessage') })
 })

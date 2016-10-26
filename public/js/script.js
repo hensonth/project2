@@ -3,22 +3,26 @@ $(document).ready(function ($) {
 
   $userForm.on('submit', function (e) {
     e.preventDefault()
-    var formdata = $(this).serializeArray()
+    var userFormData = $(this).serializeArray()
 
     window.alert('ajax call now')
 
     $.post({
       url: '/api/users',
-      data: formdata
+      udata: userFormData
     }).done(doSomething)
 
-    .done(function(data){
+    .done(function(udata){
 
     })
   })
 
-  function doSomething (data) {
+  function doSomething (udata) {
     window.alert('form submitted, new users created')
-    $('#all-user-list').append('<li>' + data.local.name + '<br>' + data.local.email + '<br>' + data.local.password + '</li>')
+    $('#all-user-list').append('<li>' + udata.local.name + '<br>' + udata.local.email + '<br>' + udata.local.password + '</li>')
   }
+
+
+
+// end of JS functions
 })
