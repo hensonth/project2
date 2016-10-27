@@ -24,7 +24,8 @@
   margin: 0;
 }
 .main-wrapper {
-
+  margin-left: 100px;
+  margin-right: 100px
 }
 #maintitle {
   padding-top: 10%;
@@ -33,10 +34,10 @@
   border-style: black;
 }
 
-#loginwrapper {
+/*.login-signup-wrapper {
   margin-left: 100px;
   margin-right: 100px
-}
+}*/
 /*Form for Adding New Shoes*/
 
 input[type="submit"], input[type="submit"]:hover {
