@@ -2,26 +2,26 @@
 <h2>Enter shoe details</h2>
 <%# Open new-shoe-wrapper%>
 <div class="new-shoe-wrapper">
-<form class="new-shoe">
+<form class="new-shoe" action="/shoes" method="post">
   <div class="row">
-    <div class="six columns">
-      <input type="text" name="shoe[color]" id="shoe-color" placeholder="Color of shoes" class="u-full-width">
-    </div>
     <div class="six columns">
       <input type="text" name="shoe[type]" id="shoe-type" placeholder="Type of Shoes" class="u-full-width">
     </div>
+    <div class="six columns">
+      <input type="text" name="shoe[color]" id="shoe-color" placeholder="Color" class="u-full-width">
+    </div>
   </div>
     <div class="row">
-    <div class="six columns">
-    <input type="text" name="shoe[size]" id="shoe-size" placeholder="Size of shoes" class="u-full-width">
-  </div>
   <div class="six columns">
-  <input type="text" name="shoe[price]" id="shoe-price" placeholder="Selling price of shoes" class="u-full-width">
+  <input type="text" name="shoe[price]" id="shoe-price" placeholder="Selling price" class="u-full-width">
+</div>
+<div class="six columns">
+<input type="text" name="shoe[cost]" id="shoe-cost" placeholder="Cost" class="u-full-width">
 </div>
 </div>
 <div class="row">
 <div class="six columns">
-<input type="text" name="shoe[cost]" id="shoe-cost" placeholder="Cost of shoes" class="u-full-width">
+<input type="text" name="shoe[quantity]" id="shoe-quantity" placeholder="Quantity" class="u-full-width">
 </div>
 <div class="six columns">
 <input type="text" name="shoe[supplier]" id="shoe-supplier" placeholder="Supplier of shoes" class="u-full-width">
@@ -34,9 +34,3 @@
 </form>
 </div>
 <%# closing new shoe wrapper%>
-
-<% allShoes.forEach(function(shoe) { %>
-  <li><%= shoe.color %></li>
-  <li><%= shoe.type %></li>
-  <li><%= shoe.size %></li>
-<% }) %>

@@ -10,21 +10,21 @@ function authCheck (req, res, next) {
   // if it's true, redirect back to profile
 
   if (req.isAuthenticated()) {
-    req.flash('signupMessage', 'You have logged in, what are you doing bruh?')
-    return res.redirect('/profile')
+    req.flash('signupMessage', 'You have successfully logged in')
+    return res.redirect('/main')
   } else {
     return next()
   }
 }
-
-router.get('/signup-ajax', function (req, res) {
-  User.find({}, function (err, allUsers) {
-    console.log(allUsers)
-    res.render('users/index', {
-      allUsers: allUsers
-    })
-  })
-})
+//
+// router.get('/signup-ajax', function (req, res) {
+//   User.find({}, function (err, allUsers) {
+//     console.log(allUsers)
+//     res.render('users/index', {
+//       allUsers: allUsers
+//     })
+//   })
+// })
 
 router.route('/signup')
       .get(authCheck, function (req, res) {
@@ -37,7 +37,7 @@ router.route('/signup')
       })
 
       .post(passport.authenticate('local-signup', {
-        successRedirect: '/profile',
+        successRedirect: '/main',
         failureRedirect: '/signup',
         failureFlash: true
       }))
@@ -47,7 +47,7 @@ router.route('/login')
         res.render('users/login', { message: req.flash('loginMessage') })
       })
       .post(passport.authenticate('local-login', {
-        successRedirect: '/profile',
+        successRedirect: '/main',
         failureRedirect: '/login',
         failureFlash: true
       }))
@@ -64,7 +64,7 @@ router.get('/profile', function (req, res) {
 
 router.get('/logout', function (req, res) {
   req.logout()
-  res.redirect('/login')
+  res.redirect('/main')
 })
 
 module.exports = router

@@ -1,12 +1,16 @@
 var mongoose = require('mongoose')
 
 var shoeSchema = new mongoose.Schema({
-  color: String,
   type: String,
-  size: Number,
+  color: String,
   price: Number,
   cost: Number,
-  supplier: String
+  quantity: Number,
+  supplier: String,
+  time: {
+    type: Date,
+    default: Date.now
+  }
 })
 
 var Shoe = mongoose.model('Shoe', shoeSchema)

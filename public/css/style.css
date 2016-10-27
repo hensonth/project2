@@ -1,17 +1,46 @@
-body {
-  background: #006599 url('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F23580240%2F184369602909%2F1%2Foriginal.jpg?w=1000&rect=218%2C451%2C5638%2C2819&s=fd3a3ebd42bd7bd9f3da3b96cba50bce') no-repeat 100% 100%;
+/*.jumbotron {
+  background-image: url('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F23580240%2F184369602909%2F1%2Foriginal.jpg?w=1000&rect=218%2C451%2C5638%2C2819&s=fd3a3ebd42bd7bd9f3da3b96cba50bce') no-repeat 100% 100%
   background-size: cover;
-  color: white;
+}*/
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F23580240%2F184369602909%2F1%2Foriginal.jpg?w=1000&rect=218%2C451%2C5638%2C2819&s=fd3a3ebd42bd7bd9f3da3b96cba50bce);
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px
+}
+
+.container {
+  margin: 0px;
+  width: 100%
 }
 
 .body-wrapper {
-  min-height: 400px;
+  min-height: 700px;
+  width: 100%;
+  margin: 0;
+}
+.main-wrapper {
+
+}
+#maintitle {
+  padding-top: 10%;
+}
+.shoecontainer {
+  border-style: black;
 }
 
+#loginwrapper {
+  margin-left: 100px;
+  margin-right: 100px
+}
 /*Form for Adding New Shoes*/
 
 input[type="submit"], input[type="submit"]:hover {
-  color: white;
+  color: black;
 }
 
 .new-shoe-wrapper {
@@ -55,6 +84,8 @@ footer {
     border-radius: 0;
     border: none;
 }
+
+
 .navbar-footer {
     margin-bottom: 0;
     text-align: center;

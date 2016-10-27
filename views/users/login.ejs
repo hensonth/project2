@@ -1,20 +1,21 @@
+<div id= "loginwrapper">
+<% if(message.length > 0) { %>
+  <h4>Error found.</h4>
+  <div class="alert alert-danger">
+    <%= message %>
+  </div>
+  
+<% } %>
 <h1>Login here</h1>
-
 <form class="login-user" action="/login" method="post">
-  <div class="row">
-    <div class="six columns">
+  <div class="form-group">
+    <div class="form-group">
       <input type="text" name="user[local][email]" placeholder="Your email" class="u-full-width">
     </div>
-    <div class="six columns">
+    <div class="form-group">
       <input type="text" name="user[local][password]" placeholder="Your password" class="u-full-width">
     </div>
     <input type="submit" value='Log in'>
   </div>
 </form>
-
-<% if(message.length > 0) { %>
-  <h2>Error found.</h2>
-  <div class="alert alert-danger">
-    <%= message %>
-  </div>
-<% } %>
+</div>

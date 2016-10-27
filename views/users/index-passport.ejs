@@ -1,5 +1,4 @@
 <h2>Create new user</h2>
-
 <% if(message.length > 0) { %>
   <h3>Flash Found</h3>
   <div class="alert alert-danger">
@@ -7,7 +6,7 @@
   </div>
 <% } %>
 
-<form class="new-user-passport" action="/signup" method="post">
+<form class="new-user-passport" action="/api/users" method="post">
   <div class="row">
     <div class="four columns">
       <input type="text" name="user[local][name]" id="user-name" placeholder="Your name" class="u-full-width">
@@ -21,13 +20,4 @@
     <input type="submit" value='Save My User'>
   </div>
 
-  <ul id="all-user-list">
-  <% allUsers.forEach(function(user) { %>
-    <li>
-        <%= user.local.name %><br>
-        <%= user.local.email %><br>
-        <%= user.local.password %>
-    </li>
-  <% }) %>
-  </ul>
 </form>

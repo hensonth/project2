@@ -1,10 +1,14 @@
 var mongoose = require('mongoose')
 
 var transactionSchema = new mongoose.Schema({
-// User ID
-// Shoe ID
-// Size
-// Quantity
+user_id: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'User'
+},
+shoe_id: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'Shoe'
+},
   size: Number,
   price: Number,
   cost: Number,

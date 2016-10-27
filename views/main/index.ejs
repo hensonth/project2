@@ -1,7 +1,24 @@
-<% include ../partials/header.ejs  %>
+<div class="container-fluid">
 
+<div class ="jumbotron">
+<h2>Satorial choices for the discerning gentleman.</h2>
+</div>
 
+<% allShoes.forEach(function(shoe) { %>
+  <div class="shoecontainer">
+  <div class="col-md-4">
+  <p>*Insert Image here*</p> <br><br><br>
+     <%= shoe.type %> <br>
+     <%= shoe.color %> <br>
+     S$<%= shoe.price %> <br>
+     <a href="/main/<%=shoe.id%>">Buy it now</a>
+     <br><br>
+</div>
+     </div>
+<% }) %>
+</div>
 
+<link rel="stylesheet" href="../../public.css" media="screen" title="no title">
 
-
-<% include ../partials/footer.ejs  %>
+</div>
+<%# closing container fluid%>
