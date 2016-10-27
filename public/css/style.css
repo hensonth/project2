@@ -21,8 +21,7 @@
 .body-wrapper {
   min-height: 700px;
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px
+
 }
 .main-wrapper {
 
@@ -35,10 +34,10 @@
   border-style: black;
 }
 
-/*.login-signup-wrapper {
+.login-signup-wrapper {
   margin-left: 100px;
   margin-right: 100px
-}*/
+}
 /*Form for Adding New Shoes*/
 
 input[type="submit"], input[type="submit"]:hover {
