@@ -1,10 +1,12 @@
 User Stories:
 
-When it comes to mens' fashion habits, men usually spend a disproportionate amount of their fashion spending on shoes. According to a 2015 study by Nielsen on consumer habits, men are more likely to spend more on a product for its perceived quality even if it means buying less of that product.
+1) When it comes to mens' fashion habits, men usually spend a disproportionate amount of their fashion spending on shoes. According to a 2015 study by Nielsen on consumer habits, men are more likely to spend more on a product for its perceived quality even if it means buying less of that product.
 
-With 
+2) Using the U.S market as a proxy to Singapore's market, menswear sales is growing faster than womens'. Consumer trends also point towards men becoming more fashion conscious but yet severely underserved by online stores as compared to women.
 
+3) With ecommerce only at 3% of total retail sales in Singapore, compared to the U.S. average of 8% and U.S. city average of more than 15%. Singaporeans are increasingly more confident of shopping online and purchasing higher valued goods online.
 
+With these three factors combined, I believe that high quality leather men's shoes would be a growing niche market that can be effectively and  profitably captured through a well-designed web application.
 
 Styling:
 Overall - getbootstrap.com
