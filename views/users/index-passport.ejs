@@ -1,4 +1,5 @@
 <div class= "login-signup-wrapper">
+
 <h3>Create new user</h3>
 <% if(message.length > 0) { %>
   <h3>Flash Found</h3>
@@ -7,7 +8,7 @@
   </div>
 <% } %>
 
-<form class="new-user-passport" action="/api/users" method="post">
+<form class="new-user-passport" action="/users" method="post">
   <div class="row">
     <div class="four columns">
       <input type="text" name="user[local][name]" id="user-name" placeholder="Your name" class="u-full-width">
@@ -16,7 +17,7 @@
       <input type="text" name="user[local][email]" id="user-email" placeholder="Your user email" class="u-full-width">
     </div>
     <div class="four columns">
-      <input type="password" name="user[local][password]" id="user-password" placeholder="Your user password" class="u-full-width">
+      <input type="text" name="user[local][password]" id="user-password" placeholder="Your user password" class="u-full-width">
     </div>
     <input type="submit" value='Save My User'>
   </div>
