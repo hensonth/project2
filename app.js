@@ -51,6 +51,8 @@ var usersRoutes = require('./routes/users')
 
 var mainRoutes = require('./routes/main')
 
+var transactionRoutes = require('./routes/transactions')
+
 app.use(bodyParser.json()) // to parse ajax json req
 app.use(bodyParser.urlencoded({
   extended: true
@@ -63,6 +65,8 @@ app.use('/api/shoes', ajaxRoutes) // only handle ajax request
 app.use('/', usersRoutes)
 
 app.use('/main', mainRoutes)
+
+app.use('/transactions', transactionRoutes)
 
 app.listen(process.env.PORT || 3000)
 console.log('Server started')

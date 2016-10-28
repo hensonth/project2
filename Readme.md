@@ -1,6 +1,8 @@
+User Stories:
 
+When it comes to mens' fashion habits, men usually spend a disproportionate amount of their fashion spending on shoes. According to a 2015 study by Nielsen on consumer habits, men are more likely to spend more on a product for its perceived quality even if it means buying less of that product.
 
-
+With 
 
 
 
