@@ -1,13 +1,13 @@
 <div class= "login-signup-wrapper">
 <% if(message.length > 0) { %>
-  <h4>Error found.</h4>
+  <h4>Hello there.</h4>
   <div class="alert alert-danger">
     <%= message %>
   </div>
 
 <% } %>
 <h1>Login here</h1>
-<form class="login-user" action="/login" method="post">
+<form class="login-user" action="/users/login" method="post">
   <div class="form-group">
     <div class="form-group">
       <input type="text" name="user[local][email]" placeholder="Your email" class="u-full-width">

@@ -48,7 +48,7 @@ router.route('/login')
       })
       .post(passport.authenticate('local-login', {
         successRedirect: '/main',
-        failureRedirect: '/login',
+        failureRedirect: '/users/login',
         failureFlash: true
       }))
 
@@ -64,6 +64,7 @@ router.get('/profile', function (req, res) {
 
 router.get('/logout', function (req, res) {
   req.logout()
+  req.flash('loginMessage', 'Logged out successfully')
   res.redirect('/main')
 })
 

@@ -13,6 +13,6 @@ var shoeSchema = new mongoose.Schema({
   }
 })
 
-var Shoe = mongoose.model('Shoe', shoeSchema)
+  var Shoe = mongoose.model('Shoe', shoeSchema)
 
-module.exports = Shoe
+  module.exports = Shoe

@@ -22,7 +22,12 @@ S$<%= shoe.price%>
 
 <%# <button type="button"><a href ='/main/transaction'>Buy it Now </a></button>%>
 
-<a href="/transactions/index" class="btn btn-default">Buy Now</a>
+<% if (!user) { %>
+          <a href="../users/login" class="btn btn-default" ><b>Please Log in to Purchase</b></a>
+        <% } else { %>
+
+          <a href="/transactions/index" class="btn btn-default"><b>Buy it now</b></a>
+        <% } %>
 
 <br>
 <br>
