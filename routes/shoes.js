@@ -11,6 +11,7 @@ router.get('/', function (req, res) {
   })
 })
 router.post('/', function (req, res) {
+
   var newShoe = new Shoe({
     type: req.body.shoe.type,
     color: req.body.shoe.color,

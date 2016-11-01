@@ -45,6 +45,8 @@ app.use(flash())
 // serve static files
 app.use(express.static(__dirname + '/public'))
 
+
+
 var shoeRoutes = require('./routes/shoes')
 // var ajaxRoutes = require('./routes/shoes_api')
 
@@ -61,12 +63,13 @@ app.use(bodyParser.urlencoded({
 
 require('./config/passport')(passport)
 
-app.use('/shoes', shoeRoutes) // only render ejs files
-// app.use('/api/shoes', ajaxRoutes) // only handle ajax request
 app.use(function (req, res, next) {
  res.locals.user = req.user
  next()
 })
+
+app.use('/shoes', shoeRoutes) // only render ejs files
+// app.use('/api/shoes', ajaxRoutes) // only handle ajax request
 
 app.use('/users', usersRoutes)
 
